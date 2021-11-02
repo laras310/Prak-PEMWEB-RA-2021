@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Praktikum Minggu 3</title>
+        <script>
+            function theme(){
+                var change = document.getElementById('change_theme').textContent
+                if(change == "Purple"){
+                    document.body.style.backgroundColor = "#ACA0C5";
+                    document.getElementById('change_theme').textContent = "Orange";
+                }
+                else if (change == "Orange"){
+                    document.body.style.backgroundColor = "#FFB79A";
+                    document.getElementById('change_theme').textContent = "Purple"
+                }
+            }
+
+            function feels(){
+                var x = document.getElementById("myfeeling").value;
+                if (x == "Senang"){
+                    document.getElementById("ket").innerHTML="Don't forget to share your happiness with people around you";
+                }                
+                else if (x == "Sedih"){
+                    document.getElementById("ket").innerHTML="Life is too short to be sad";
+                }
+                else {
+                    document.getElementById("ket").innerHTML="Everything will be okay";
+                }        
+            }
+
+            function factorial(){
+                var x= document.getElementById("fact").value;
+                var hasil = 1;
+                for(i=1; i<=x;  i++){
+                    hasil*=i;
+                }
+                document.getElementById("ket2").innerHTML=hasil;
+            }
+        </script>
+    </head>
+
+    <body style = "background-color: #ACA0C5;">
+        <div >
+            <button id="change_theme" onclick="theme()" type="button">Orange</button>
+        </div>
+        <label>Pilih suasana hati: </label>
+        <select id="myfeeling" oninput="feels()">
+            <option value="" selected disabled hidden></option>
+            <option value="Senang">Senang</option>
+            <option value="Sedih">Sedih</option>
+            <option value="Cemas">Cemas</option>                
+        </select>
+        <h4 id=ket></h4>
+
+        <label>Masukkan Angka: </label>
+        <input type="number" id="fact">
+        <button onclick="factorial()">Submit</button>
+        <h4 id=ket2></h4>
+    </body>
+</html>
