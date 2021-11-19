@@ -6,10 +6,13 @@
             padding: 5px;}
             h2{background-color: #89B0CD;
             padding: 5px;}
-            .button{background-color:#384955;
-            color:white;
+            .button{background-color:white;
+            color:black;
             padding: 5px;
-            border:none;}
+            border:2px solid #384955;
+            transition-duration: 0.5s;}
+            .button:hover{background-color: #384955;
+            color: white;}
         </style>
     </head>
 
