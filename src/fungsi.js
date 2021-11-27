@@ -12,47 +12,9 @@ function selesai() {
 function update() {
 	$.getJSON("data.php", function(data) {
 		$("table").empty();
-		var no = 1;
+		$("table").append("<tr><th>"+"Nomor"+"</th><th>"+"Nama"+"</th><th>"+"Jumlah Orang"+"</th><th>"+"Tanggal"+"</th><th>"+"Waktu"+"</th></tr>");
 		$.each(data.result, function() {
-			$("table").append("<tr><td>"+(no++)+"</td><td>"+this['nim']+"</td><td>"+this['nama']+"</td><td>"+this['prodi']+"</td><td>"+this['angkatan']+"</td></tr>");
+			$("table").append("<tr><td>"+this["no"]+"</td><td>"+this["nama"]+"</td><td>"+this["jumlah"]+"</td><td>"+this["tanggal"]+"</td><td>"+this["waktu"]+"</td></tr>");
 		});
 	});
 }
-
-$(".btnSave").click(function(){
-	var data = $('.formAdd').serialize();
-	$.ajax({
-		type: 'POST',
-		url: "simpan.php",
-		data: data,
-		success: function() {
-			alert('input data berhasil');
-		}
-	});
-});
-
-$(".btnDel").click(function(){
-	var data = $('.formDel').serialize();
-	$.ajax({
-		type: 'POST',
-		url: "delete.php",
-		data: data,
-		cache: false,
-		success: function() {
-			alert('hapus berhasil');
-		}
-	});
-});
-
-$(".btnUp").click(function(){
-	var data = $('.formUp').serialize();
-	$.ajax({
-		type: 'POST',
-		url: "update.php",
-		data: data,
-		cache: false,
-		success: function() {
-			alert('update berhasil');
-		}
-	});
-});

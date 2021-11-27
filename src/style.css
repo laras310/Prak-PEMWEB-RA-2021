@@ -1,0 +1,148 @@
+*{
+    margin:5px;
+    font-family: sans-serif;
+}
+header{
+    height: fit-content;
+    display:flex;
+    text-align:justify;
+    padding-bottom: 5px;
+}
+
+h3{
+    padding-top: 15px;
+    font-family: serif;
+}
+
+.logo{
+    width: 120px !important;
+    height: 60px !important;
+}
+
+.container{
+    padding: 5px 5px;
+}
+
+.flex{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.flex > dev{
+    margin: 10px;
+
+}
+
+.container img{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    width:1100px;
+    height: 550px;
+    padding-top: 10pt;
+}
+
+/* nav{
+    width:97.7%;
+    background-color:#dd1021;
+    padding: 15px 15px;
+} */
+
+.body{
+    display:flex;
+    height: auto;
+    width:auto;
+}
+
+/* .main{
+    width:70%;
+    border-left :1px solid rgb(255, 225, 143);
+    border-right :1px solid rgb(255, 225, 143);
+    border-top:2px solid crimson;
+    border-bottom: 2px solid rgb(204, 153, 12);
+    border-radius: 5px;
+    margin-left: 15px;
+    padding:15px 15px;
+    margin-right: 10px;
+} */
+
+.main img{
+    width: 210px;
+    height: 280px;
+}
+
+.database{
+    width:30%;
+    
+}
+
+.container2{
+    margin: 0;
+}
+
+.container2 img{
+    float:left;
+}
+
+
+table, td, th{
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #ffc300;
+    border-collapse: collapse;
+    padding:10px
+}
+/* table{
+    width:75%;  
+    
+    margin-top: 10px;
+} */
+
+/* th,td{
+    padding: 10px;
+    border-bottom: 1px solid #DDD;
+} */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dd1021;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 14px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    background-color: #ffc300;
+}
+
+footer{
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 45px;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    box-shadow: 0px -5px 15px #8888;
+}
+
+.shadow{
+    border: 1px solid #DDD;
+    margin: 15px;
+    box-shadow: 3px -5px 15px #8888;
+}

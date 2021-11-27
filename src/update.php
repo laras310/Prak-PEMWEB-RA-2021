@@ -1,10 +1,11 @@
 <?php
 include ("connect.php");
 
-$nim = $_POST['nim'];
+$no = $_POST['no'];
 $nama = $_POST['nama'];
-$prodi=$_POST['prodi'];
-$angkatan=$_POST['angkatan'];
+$jumlah=$_POST['jumlah'];
+$tanggal=$_POST['tanggal'];
+$waktu=$_POST['waktu'];
 
-$sql=mysqli_query($connect,"update mahasiswa set nama='$nama', prodi='$prodi', angkatan='$angkatan' where nim='$nim'");
+$sql=mysqli_query($connect,"update rsvp set nama='$nama', jumlah='$jumlah',tanggal='$tanggal', waktu='$waktu' where no='$no'");
 ?>
